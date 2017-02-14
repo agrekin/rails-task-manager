@@ -1,0 +1,11 @@
+My Show View:
+
+<br>
+
+<h1><%= @task.name %></h1>
+<h4><%= @task.status %></h4>
+
+
+
+<%= link_to "Edit the task", edit_task_path(@task) %>
+<%= link_to "DESTROY the task", task_path(@task), method: :delete %>
